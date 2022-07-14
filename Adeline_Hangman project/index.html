@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form>
+      	<h1>Hangman</h1>
+			
+			<label for="start"></label>
+            <input type="button" id="start" name="start" value="Start" onclick="startBtn()"/>
+			<input type="button" class="enableLetters" value=" Reset" onclick="Reset()" disabled/><br>
+            <label for="score">Score: </label>
+            <input type="text" id="score" name="score" value="0" size="2" checked="valid()" disabled/><br>
+            <label for="fail">Fails (6): </label>
+            <input type="text" id="fail" name="fail" value="0" size="2" disabled/><br>
+
+            <label for="hangman"></label>
+            <input type="text" id="hangman" name="hangman" value="   ---Hangman---   " disabled/><br>
+            <label for="startmessage"></label>
+            <input type="text" id="startmessage" name="startmessage" value="Click Start to get a word." disabled/>
+
+
+			<p id="clue"></p>
+    		<p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
+
+			<input type="button" class="enableLetters" value="A" onClick="clickButton('A')" disabled/>
+      		<input type="button" class="enableLetters" value="B" onClick="clickButton('B')" disabled/>
+      		<input type="button" class="enableLetters" value="C" onClick="clickButton('C')" disabled/>
+      		<input type="button" class="enableLetters" value="D" onClick="clickButton('D')" disabled/>
+      		<input type="button" class="enableLetters" value="E" onClick="clickButton('E')" disabled/>
+      		<input type="button" class="enableLetters" value="F" onClick="clickButton('F')" disabled/>
+      		<input type="button" class="enableLetters" value="G" onClick="clickButton('G')" disabled/>
+      		<input type="button" class="enableLetters" value="H" onClick="clickButton('H')" disabled/>
+      		<input type="button" class="enableLetters" value="I" onClick="clickButton('I')" disabled/>
+      		<input type="button" class="enableLetters" value="J" onClick="clickButton('J')" disabled/>
+      		<input type="button" class="enableLetters" value="K" onClick="clickButton('K')" disabled/>
+      		<input type="button" class="enableLetters" value="L" onClick="clickButton('L')" disabled/>
+      		<input type="button" class="enableLetters" value="M" onClick="clickButton('M')" disabled/>
+      		<input type="button" class="enableLetters" value="N" onClick="clickButton('N')" disabled/>
+			<input type="button" class="enableLetters" value="O" onClick="clickButton('O')" disabled/>
+			<input type="button" class="enableLetters" value="P" onClick="clickButton('P')" disabled/>
+			<input type="button" class="enableLetters" value="Q" onClick="clickButton('Q')" disabled/>
+			<input type="button" class="enableLetters" value="R" onClick="clickButton('R')" disabled/>
+			<input type="button" class="enableLetters" value="S" onClick="clickButton('S')" disabled/>
+			<input type="button" class="enableLetters" value="T" onClick="clickButton('T')" disabled/>
+			<input type="button" class="enableLetters" value="U" onClick="clickButton('U')" disabled/>
+			<input type="button" class="enableLetters" value="V" onClick="clickButton('V')" disabled/>
+			<input type="button" class="enableLetters" value="W" onClick="clickButton('W')" disabled/>
+		  	<input type="button" class="enableLetters" value="X" onClick="clickButton('X')" disabled/>
+		  	<input type="button" class="enableLetters" value="Y" onClick="clickButton('Y')" disabled/>
+		  	<input type="button" class="enableLetters" value="Z" onClick="clickButton('Z')" disabled/>
+      <br><br>
+	  	<input type="button" class="enableLetters" value=" Hint" onclick="Hint()" disabled/>
+      
+    </form>
+  </body>
+</html>
