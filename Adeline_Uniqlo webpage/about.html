@@ -1,0 +1,112 @@
+<!doctype html>
+<html  lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us</title>
+<link type="text/css" rel="stylesheet" href="css/aboutcss.css">
+
+</head>
+
+<body>
+	<div id="header">
+        <a href="index.html"><img src="images/uniqlo-logo.jpg" width="600" height="155" alt="logo"></a>
+		<div class="topnav">
+  		<a href="index.html">Home</a>
+		<a class="active" href="about.html">About</a>
+		<a href="gallery.html">Shop</a>
+  		<a href="registration.html">Registration</a>
+		<a href="login.html">Login</a>
+  		<a href="contactus.html">Contact Us</a>
+  		
+		</div><br>
+    </div>
+	
+    
+    
+    <!---- Content ---->
+	<div class="slideshow-container"><br>
+  <div class="mySlides fade"> <img src="images/about1.jpg" style="width:100%" alt="banner"> </div>
+  <div class="mySlides fade"> <img src="images/about2.jpg" style="width:100%" alt="banner"> </div>
+  <div class="mySlides fade"> <img src="images/about3.jpg" style="width:100%" alt="banner"> </div>
+  <div style="text-align:center"> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> </div>
+</div>
+	
+	<div id="mainContent">
+	<h1>About Us</h1>
+		<p>As of 1 March 2017<br>
+		- UNIQLO (SINGAPORE) PTE. LTD.</p>
+		
+	<p><b>COMPANY NAME</b></p>
+	UNIQLO (SINGAPORE) PTE. LTD.
+	<p><b>ESTABLISHED</b></p>
+	Established: August 20, 2008
+	<p><b>LOCATION</b></p>
+	Republic of Singapore
+	<p><b>LINE OF BUSINESS</b></p>
+	The sale of UNIQLO brand casual clothing in Republic of Singapore
+	<p><b>NUMBER OF STORES</b></p>
+	26 stores (As of December 2020)
+	
+	</div>
+	
+	<!--------------Footer--------------->
+    
+        <footer id="mainFooter">
+			<div class="wrap-footer zerogrid">
+            <div class="row">
+                <div class="col-2-3">
+                    <div class="wrap-col">
+                        <div class="box">
+                            <div class="heading"><h2>Subscribe to our newsletter</h2></div>
+                            <div class="content">
+                            	<form>
+                                	<input type="email" class="newsletter" value="email..." />
+                                    <input type="submit" class="submit" value="Subscribe" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="wrap-col">
+                        <div class="box">
+                            <div class="heading"><h2>Made for all</h2></div>
+                            <div class="content">
+                                <div class="gallery">
+                                    <a href="https://www.facebook.com/uniqlo.sg/"><img src="images/sm_facebook.png" /></a>
+                                    <a href="https://www.instagram.com/uniqlosg/?hl=en"><img src="images/sm_instagram.png" /></a>
+                                    <a href="https://www.youtube.com/channel/UCdaRQkK9oFkLDQb-fLQCIJQ"><img src="images/sm_youtube.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        	<p>Copyright &copy; 2021. All Rights Reserved.</p>
+        </footer>
+	
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
+}
+</script>
+</body>
+</html>
