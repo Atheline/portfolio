@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link rel="stylesheet" href="Stylecss.css" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+<header class="mainHeader"> <a href="Home.html"><img src="Logo.gif" width="300" height="300" alt="Logo" class="center" ></a>
+  <div class="navbar"> 
+	  <a href="Home.html">Home</a> 
+	  <a href="introduction.html">Introduction</a> 
+	  <a href="Schedule.html">Schedule</a> 
+	  <a class="active" href="Contact.html">Contact</a> 
+	</div>
+</header>
+
+<div class="mainContent">
+	<header>
+      <h2>Contact us if you have any questions relating to Course Information.</h2>
+    </header>
+  <div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="sg">Singapore</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</div>
+	
+<footer class="mainFooter">
+  <p>Copyright &copy; 2021</p>
+</footer>
+</body>
+</html>
