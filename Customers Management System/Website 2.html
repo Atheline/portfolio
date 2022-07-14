@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Customers</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="jquery.js"></script>
+<script src="app.js"></script>
+</head>
+
+<body>
+	
+<div id="wrapper">
+  <div id="header">
+    <div title="Page 2">
+      <p>Customers Management System</p>
+    </div>
+    <div id="topnav">
+      <ul>
+        <li>
+          <a href="Homepage.html">
+            <img src="volkswagenlogo.jpg" width="20" height="20" alt="picture">
+          </a>
+        </li>
+        <li>
+          <a href="Customers.html">Add Customer</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="content-wrapper">
+    <div id="content">
+      <form id="customerform">
+        <div>
+          <label>Last name:</label>
+          <div class="field">
+            <input type="text" name="surname" id="surname" required>
+          </div>
+        </div>
+        <div>
+          <label>Name:</label>
+          <div class="field">
+            <input type="text" name="name" id="name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required>
+          </div>
+        </div>
+        <div>
+          <label>Gender: </label>
+          <input type="radio" name="gender" id="gender" value="Female" required>Female
+			<input type="radio" name="gender" id="gender" value="Male" required>Male
+          <br>
+        </div>
+		  <div>
+		  	<label for="subject">Address: </label>
+			  <div class="field">
+			  	<textarea id="address" name="address" placeholder="Enter your address..." rows="3" cols="40" required></textarea>
+			  </div>
+		  </div>
+		  <div>
+		  	<label>Email: </label>
+			  <div class="field">
+			  	<input type="email" name="email" id="email" required>
+			  </div>
+		  </div>
+		  <div>
+		  	<label>Phone Number: </label>
+			  <div class="field">
+			  	<input type="text" id="phoneN" name="phoneN" maxlength="8" required>
+			  </div>
+		  </div>
+		  <div class="field">
+        	<input type="submit" id="submit" value="Insert">
+			<input type="reset" id="resetform" value="Cancel">
+		  </div>
+      </form>
+    </div>
+    <div>
+      <table width="100%" border="1px" id="tblData">
+		  <tr>
+		  	<th>S/No.</th>
+			<th>Last Name</th>
+			<th>Name</th>
+			<th>Gender</th>
+			<th>Address</th>
+			<th>Email</th>
+			<th>Phone Number</th>
+			<th>Actions</th>
+		  </tr>
+</table>
+    </div>
+  </div>
+  <div id="footer">Copyright @ ITE - All rights</div>
+</div>
+</body>
+<script>
+	function isNumberKey(evt)
+{
+	var charCode = (evt.which) ? evt.which : event.keyCode
+	if (charCode > 31 && (charCode < 48 || charCode > 57))
+	return false;
+
+	return true;
+}
+</script>
+</html>
